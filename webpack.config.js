@@ -10,6 +10,8 @@ module.exports = {
     filename: "bundle.js",
     publicPath: "/"
   },
+  performance: { hints: false },
+  mode: "production", 
   module: {
     rules: [
       {

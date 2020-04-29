@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap'
+import { Navbar, Nav } from 'react-bootstrap'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
+import { Redirect } from 'react-router-dom'
 import Home from '../pages/home/home'
 import About from '../pages/about/about'
 import Services from '../pages/services/services'
@@ -11,6 +11,7 @@ import FAQS from '../pages/faqs/faqs'
 import Blog from '../pages/blog/blog'
 import Contact from '../pages/contact/contact'
 import Thanks from '../pages/thanks/thanks'
+import NotFoundPage from '../pages/Error/Error'
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import Styles from '../assets/sass/global.scss'
 import "../assets/sass/global.scss";
@@ -31,6 +32,7 @@ export default function Navigation() {
                     <Nav.Link href="/blog">Blog</Nav.Link>
                     <Nav.Link href="/faqs">Faqs</Nav.Link>
                     <Nav.Link href="/contact">Contact</Nav.Link>
+                    
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
@@ -49,7 +51,8 @@ export default function Navigation() {
                   <Route path="/blog" component={Blog} />
                   <Route path="/contact" component={Contact} />
                   <Route path="/thanks" component={Thanks} />
-                  <Route component={Error}/>
+                  <Route path="/404" component={NotFoundPage} />
+                    <Redirect to="/404" />
                 </Switch>
               </div>
             </Router>
