@@ -47,6 +47,7 @@
     "bootstrap": "^4.4.1",
     "isomorphic-unfetch": "^3.0.0",
     "react-bootstrap": "^1.0.1",
+    "react-helmet": "^6.0.0",
     "react-snap": "^1.23.0"
   }
 }
