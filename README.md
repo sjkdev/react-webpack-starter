@@ -5,4 +5,4 @@
 
 > Use when Nextjs, Gatsby or CRA seem too opinionated or bloated, feel free to swap out react-bootstrap for tailwind or whatever you like
 
-> added react-hlemt for meta tags to be assigned to each page
+> added react-helmet for meta tags to be assigned to each page
