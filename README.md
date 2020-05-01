@@ -1,6 +1,8 @@
 # React Babel Webpack Starter
 
-> Starter with nav and routing set up -> react-router-dom, react-bootstrap
+> Starter with nav and routing set up 
+
+> uses -> webpack, react-router-dom, react-bootstrap, sass, babel helmet, react-snap
 
 > Use when Nextjs, Gatsby or CRA seem too opinionated or bloated, feel free to swap out react-bootstrap for tailwind or whatever you like
 
