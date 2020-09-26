@@ -22,7 +22,7 @@ const home = (props) => {
     return (
         <Fragment>
         <Helmet>
-        <title>AI - Digital Wonderland home Page</title>
+        <title>Hello! - Digital Wonderland home Page</title>
         <meta name="description" content="creative business consultancy for start-ups, scale-ups & entrepreneurs." />
         <meta name="keywords" content="Digital Wonderland, home Page, Brighton, London, UK, Web Design Experts, UX Design, UI Design, Business Transformation, Affordable web design, Brand Identity, Branding, Visual Identity, Web Design, Mobile app, Saas, Wordpress, React, Vue, Angular, javascript, js, node, service, ecommerce, digital agency, experts, expertise, local, national, international" />
         <meta name="author" content="Sean King, Sorn King, Digital Wonderland" />
