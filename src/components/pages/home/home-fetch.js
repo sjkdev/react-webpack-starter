@@ -9,16 +9,15 @@ const home = (props) => {
 
     const [values, setValues] = useState([]);
 
+    const getValues = async () => {
+        const values = await (await fetch('http://localhost:5000/api/values')).json();
+        setValues(values);
+    };
+
     useEffect(() => {
-        axios.get('http://localhost:5000/api/values')
-            .then(res => {
-                console.log(res)
-                setValues(res.data)
-            })
-            .catch(err => {
-                console.log(err);
-            })
-    }, [])
+        getValues();
+    }, []);
+
 
     return (
         <Fragment>
@@ -29,22 +28,23 @@ const home = (props) => {
         <meta name="author" content="Sean King, Sorn King, Digital Wonderland" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             </Helmet>
+            <Container>
         <Row>
         <Col>
+                
         <h1>{props.title}</h1>
         <p>{props.blurb}</p>
         </Col>
             </Row>
             <Row>
-                <Col>
                 <h2>Values from dotnet API</h2>
                 {values.map(value => (
                     <ul key={value.id}>
                         <li>{value.name}</li>  
                     </ul>
                 ))}
-                </Col>
                 </Row>
+            </Container>
         </Fragment>
     )
 }

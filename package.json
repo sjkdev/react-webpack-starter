@@ -49,6 +49,7 @@
   "dependencies": {
     "axios": "^0.20.0",
     "bootstrap": "^4.4.1",
+    "data.js": "^0.12.11",
     "isomorphic-unfetch": "^3.0.0",
     "jquery": "^3.5.1",
     "minimist": "^1.2.5",

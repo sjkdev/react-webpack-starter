@@ -1,0 +1,97 @@
+Arguments: 
+  /Users/apple/.nvm/versions/node/v14.4.0/bin/node /usr/local/Cellar/yarn/1.22.5/libexec/bin/yarn.js
+
+PATH: 
+  /Users/apple/.rvm/gems/ruby-2.6.2/bin:/Users/apple/.rvm/gems/ruby-2.6.2@global/bin:/Users/apple/.rvm/rubies/ruby-2.6.2/bin:/Users/apple/usr/local/Cellar/mongodb-community-shell/4.2.0/bin:/Users/apple/.nvm/versions/node/v14.4.0/bin:/Users/apple/.npm-packages/bin:/usr/local/opt/php@7.2/sbin:/usr/local/opt/php@7.2/bin:/usr/local/opt/php@7.2/sbin:/Applications/xampp/xamppfiles/bin/mysql:/usr/local/mysql/bin:/usr/local/opt/sqlite/bin:/usr/local/opt/php@7.2/bin:/usr/local/opt/php@7.2/sbin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/local/opt/php@7.2/sbin:/usr/local/opt/php@7.2/bin:/usr/local/opt/php@7.2/sbin:/usr/local/opt/php@7.2/bin:/usr/local/opt/imagemagick@6/bin:/usr/local/opt/qt/bin:/usr/local/opt/php@7.1/sbin:/usr/local/opt/php@7.1/bin:/usr/local/opt/php@7.2/sbin:/usr/local/opt/php@7.2/bin:/usr/local/opt/qt/bin:/Users/apple/.rbenv/shims:/Users/apple/sdkman/bin:/Users/apple/bin:/usr/local/bin:/Users/apple/.npm-packages/bin:/usr/local/opt/php@7.2/sbin:/usr/local/opt/php@7.2/bin:/Users/apple/.composer/vendor/bin:/Users/apple/Flutter/flutter/bin:/Users/apple/Flutter/flutter/bin:/usr/local/bin:/usr/local/opt/gettext/bin:/usr/local/sbin:/usr/local/opt/php@7.1/sbin:/usr/local/opt/php@7.1/bin:/usr/local/php/bin:/usr/local/opt/php@7.1/bin:/Users/apple/Library/Haskell/bin:/Users/apple/.npm-packages/bin:/Users/apple/.rbenv/shims:/Users/apple/bin:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/Users/apple/.cargo/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/share/dotnet:/Users/apple/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Wireshark.app/Contents/MacOS:/Applications/Xamarin:/Applications/flutter/bin:/Users/apple/.rvm/bin:/usr/local/opt/php@7.2/bin:/usr/local/Cellar/maven/3.5.0/libexec/bin:/Users/Sean/.npm-packages/bin:/Users/apple/.npm-packages/bin:/Users/sjk1/.npm-packages/bin:/opt/yarn-v1.19.1/bin:/usr/local/go/bin
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  14.4.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/core-js/-/core-js-2.6.11.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (/usr/local/Cellar/yarn/1.22.5/libexec/lib/cli.js:141376:19)
+      at Object.onceWrapper (events.js:421:28)
+      at ClientRequest.emit (events.js:315:20)
+      at TLSSocket.emitRequestTimeout (_http_client.js:768:9)
+      at Object.onceWrapper (events.js:421:28)
+      at TLSSocket.emit (events.js:327:22)
+      at TLSSocket.Socket._onTimeout (net.js:480:8)
+      at listOnTimeout (internal/timers.js:549:17)
+      at processTimers (internal/timers.js:492:7)
+
+npm manifest: 
+  {
+    "name": "webpack-react-babel-starter",
+    "version": "1.0.0",
+    "description": "",
+    "main": "postcss.config.js",
+    "scripts": {
+      "start": "node server.js",
+      "dev": "webpack-dev-server --mode development",
+      "clean": "rm -rf ./build/",
+      "build": "rm -rf ./build/ && webpack --mode production",
+      "postbuild": "react-snap"
+    },
+    "keywords": [],
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/sjkdev/react-webpack-starter.git"
+    },
+    "author": "SJK",
+    "license": "MIT",
+    "devDependencies": {
+      "@babel/core": "^7.9.0",
+      "@babel/plugin-proposal-class-properties": "^7.8.3",
+      "@babel/preset-env": "^7.9.5",
+      "@babel/preset-react": "^7.9.4",
+      "@babel/runtime": "^7.9.2",
+      "autoprefixer": "^10.0.0",
+      "babel-loader": "^8.1.0",
+      "css-loader": "^4.2.1",
+      "file-loader": "^6.0.0",
+      "html-webpack-plugin": "^4.2.0",
+      "mini-css-extract-plugin": "^0.11.2",
+      "node-sass": "^4.14.1",
+      "postcss-loader": "^4.0.2",
+      "react": "^16.13.1",
+      "react-dom": "^16.13.1",
+      "react-router-dom": "^5.1.2",
+      "sass-loader": "^10.0.2",
+      "static-site-generator-webpack-plugin": "^3.4.2",
+      "style-loader": "^1.2.0",
+      "webpack": "^4.43.0",
+      "webpack-cli": "^3.3.11",
+      "webpack-dev-server": "^3.11.0"
+    },
+    "browserslist": [
+      "> 0.2%",
+      "last 15 versions",
+      "not dead"
+    ],
+    "dependencies": {
+      "axios": "^0.20.0",
+      "bootstrap": "^4.4.1",
+      "data.js": "^0.12.11",
+      "isomorphic-unfetch": "^3.0.0",
+      "jquery": "^3.5.1",
+      "minimist": "^1.2.5",
+      "npm-check-updates": "^9.0.1",
+      "popper.js": "^1.16.1",
+      "postcss": "^8.0.3",
+      "react-bootstrap": "^1.0.1",
+      "react-helmet": "^6.0.0",
+      "react-snap": "^1.23.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
