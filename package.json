@@ -49,7 +49,7 @@
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "bootstrap": "^4.4.1",
     "create-react-component-folder": "^0.3.4",
     "data.js": "^0.12.11",
