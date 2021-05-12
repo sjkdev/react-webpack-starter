@@ -59,7 +59,7 @@
     "minimist": "^1.2.5",
     "npm-check-updates": "^9.0.1",
     "popper.js": "^1.16.1",
-    "postcss": "^8.0.3",
+    "postcss": "^8.2.10",
     "react-bootstrap": "^1.0.1",
     "react-helmet": "^6.0.0",
     "react-snap": "^1.23.0",
